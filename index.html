@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DemiDummy Games</title>
+    <meta name="description" content="Little games you can play right now, free in your browser: a monster-catching JRPG, a pirate tactics game, a VHS dream, an analog horror comedy and two idle games.">
+    <meta name="theme-color" content="#0d0c16">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="DemiDummy Games">
+    <meta property="og:description" content="Little games you can play right now, free in your browser. No installs, no accounts.">
+    <meta property="og:url" content="https://demidummy.github.io/">
+    <meta property="og:image" content="https://demidummy.github.io/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ffd140'/%3E%3Cstop offset='1' stop-color='%23ff5fa2'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Cpath d='M25 19l22 13-22 13z' fill='%230d0c16'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Inter:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="masthead">
+        <a class="brand" href="./" aria-label="DemiDummy Games, home">
+            <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+                <defs>
+                    <linearGradient id="brand-gradient" x1="0" y1="0" x2="1" y2="1">
+                        <stop offset="0" stop-color="#ffd140"/>
+                        <stop offset="1" stop-color="#ff5fa2"/>
+                    </linearGradient>
+                </defs>
+                <rect width="64" height="64" rx="16" fill="url(#brand-gradient)"/>
+                <path d="M25 19l22 13-22 13z" fill="#0d0c16"/>
+            </svg>
+            <span>DemiDummy</span>
+        </a>
+
+        <div class="masthead-copy">
+            <h1>Games you can play <em>right now.</em></h1>
+            <p class="lede">
+                <span id="game-count">Six</span> little worlds, free in your browser. No installs, no accounts:
+                pick one and press play.
+            </p>
+            <div class="masthead-actions">
+                <button class="surprise" id="surprise" type="button">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 3h5v5M4 20 21 3M21 16v5h-5M15 15l6 6M4 4l5 5" /></svg>
+                    Surprise me
+                </button>
+                <a class="ghost" href="https://github.com/DemiDummy">On GitHub</a>
+            </div>
+        </div>
+
+        <div class="fan" aria-hidden="true">
+            <img src="img/tree-tree-tree.webp" alt="">
+            <img src="img/trip-sitter.webp" alt="">
+            <img src="img/pocket-cosmos.webp" alt="">
+        </div>
+    </header>
+
+    <main>
+        <ul class="grid" id="games">
+            <li class="card" style="--accent: #ffd140; --accent-ink: #2a1d00">
+                <div class="cover"><img src="img/pocket-cosmos.webp" width="960" height="540" alt="Pocket Cosmos title screen: Lumbit, a yellow star-bunny, on a glowing pedestal under a ringed planet"></div>
+                <div class="body">
+                    <p class="genre">Monster-catching JRPG</p>
+                    <h2><a class="stretch" href="https://demidummy.github.io/pocket-cosmos-web/">Pocket Cosmos</a></h2>
+                    <p class="subtitle">Special Lumbit Edition</p>
+                    <p class="blurb">Catch cosmites in the tall grass with Lumbit at your heels, then take on Tony's Gym. Area&nbsp;1 of the full game, toon-shaded and running in your browser.</p>
+                    <ul class="facts">
+                        <li>Arrows + Z</li>
+                        <li>3D</li>
+                    </ul>
+                    <div class="foot">
+                        <span class="updated" data-repo="pocket-cosmos-web"></span>
+                        <span class="play" aria-hidden="true">Play <svg viewBox="0 0 24 24"><path d="M8 5l11 7-11 7z"/></svg></span>
+                    </div>
+                </div>
+            </li>
+
+            <li class="card" style="--accent: #4fb3ff; --accent-ink: #00213a">
+                <div class="cover"><img src="img/pirate-web.webp" width="960" height="540" alt="Two toon-shaded sloops on a bright blue sea, one with red sails and a skull flag" loading="lazy"></div>
+                <div class="body">
+                    <p class="genre">Sailing and ship tactics</p>
+                    <h2><a class="stretch" href="https://demidummy.github.io/pirate-web/">Pirate Web</a></h2>
+                    <p class="blurb">Sail a battered sloop, fight turn-based ship battles on the open sea, take islands and grow your home port.</p>
+                    <ul class="facts">
+                        <li>Mouse + WASD</li>
+                        <li>3D</li>
+                    </ul>
+                    <div class="foot">
+                        <span class="updated" data-repo="pirate-web"></span>
+                        <span class="play" aria-hidden="true">Play <svg viewBox="0 0 24 24"><path d="M8 5l11 7-11 7z"/></svg></span>
+                    </div>
+                </div>
+            </li>
+
+            <li class="card" style="--accent: #7d8cff; --accent-ink: #0a0f3d">
+                <div class="cover"><img src="img/sleepwalk.webp" width="800" height="450" alt="A grainy VHS frame of an empty hotel lobby with a checkerboard floor and red armchairs" loading="lazy"></div>
+                <div class="body">
+                    <p class="genre">Non-Euclidean dream walk</p>
+                    <h2><a class="stretch" href="https://demidummy.github.io/sleepwalk/">Sleepwalk</a></h2>
+                    <p class="blurb">A short dream on a worn VHS tape. The rooms are bigger on the inside, one hallway never ends, and things change when you're not looking.</p>
+                    <ul class="facts">
+                        <li>Mouse + WASD</li>
+                        <li>First person</li>
+                    </ul>
+                    <div class="foot">
+                        <span class="updated" data-repo="sleepwalk"></span>
+                        <span class="play" aria-hidden="true">Play <svg viewBox="0 0 24 24"><path d="M8 5l11 7-11 7z"/></svg></span>
+                    </div>
+                </div>
+            </li>
+
+            <li class="card" style="--accent: #ff5fa2; --accent-ink: #3a0019">
+                <div class="cover"><img src="img/trip-sitter.webp" width="960" height="540" alt="A cartoon kitchen where the fridge, toaster, clock and door all have faces; Dez says: you're doing amazing buddy" loading="lazy"></div>
+                <div class="body">
+                    <p class="genre">Analog horror comedy</p>
+                    <h2><a class="stretch" href="https://demidummy.github.io/trip-sitter/">Trip Sitter</a></h2>
+                    <p class="blurb">You're tripping, and your friend Dez is looking after you. Mostly. Seven rooms in seven art styles, with camcorder tapes in between.</p>
+                    <ul class="facts">
+                        <li>Mouse</li>
+                        <li>Headphones</li>
+                        <li class="warn">Jumpscares, flashing lights</li>
+                    </ul>
+                    <div class="foot">
+                        <span class="updated" data-repo="trip-sitter"></span>
+                        <span class="play" aria-hidden="true">Play <svg viewBox="0 0 24 24"><path d="M8 5l11 7-11 7z"/></svg></span>
+                    </div>
+                </div>
+            </li>
+
+            <li class="card" style="--accent: #45e0ee; --accent-ink: #00303a">
+                <div class="cover"><img src="img/cosmos-idle.webp" width="960" height="540" alt="Pocket Cosmos Idle logo over a crater, with Lumbit and four other cosmites on the grass" loading="lazy"></div>
+                <div class="body">
+                    <p class="genre">Idle RPG</p>
+                    <h2><a class="stretch" href="https://demidummy.github.io/cosmos-idle/">Pocket Cosmos Idle</a></h2>
+                    <p class="blurb">A Melvor-style idle game with the cosmites: train six skills, catch and breed one-of-a-kind cosmites, and beat Tony. It keeps going while you're away.</p>
+                    <ul class="facts">
+                        <li>Click</li>
+                        <li>Runs while you're away</li>
+                    </ul>
+                    <div class="foot">
+                        <span class="updated" data-repo="cosmos-idle"></span>
+                        <span class="play" aria-hidden="true">Play <svg viewBox="0 0 24 24"><path d="M8 5l11 7-11 7z"/></svg></span>
+                    </div>
+                </div>
+            </li>
+
+            <li class="card" style="--accent: #7ed957; --accent-ink: #0f2a00">
+                <div class="cover"><img src="img/tree-tree-tree.webp" width="960" height="540" alt="Woody, a cartoon tree with a face, in full bloom over a row of houses, saying: Look at me! I'm gorgeous!" loading="lazy"></div>
+                <div class="body">
+                    <p class="genre">Idle clicker</p>
+                    <h2><a class="stretch" href="https://demidummy.github.io/tree-tree-tree/">Tree Tree Tree</a></h2>
+                    <p class="blurb">Woody is a tree with feelings. Water him and snip his twigs and he'll shower you in leaves, all the way from backyard sapling to owning the galaxy. Neglect him at your peril.</p>
+                    <ul class="facts">
+                        <li>Click</li>
+                        <li>Runs while you're away</li>
+                    </ul>
+                    <div class="foot">
+                        <span class="updated" data-repo="tree-tree-tree"></span>
+                        <span class="play" aria-hidden="true">Play <svg viewBox="0 0 24 24"><path d="M8 5l11 7-11 7z"/></svg></span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </main>
+
+    <footer class="footer">
+        <p>Made by <a href="https://github.com/DemiDummy">DemiDummy</a>. Every game here runs right in your browser.</p>
+    </footer>
+
+    <script src="site.js" defer></script>
+</body>
+</html>
