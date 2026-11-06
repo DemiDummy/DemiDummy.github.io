@@ -9,7 +9,7 @@ const GITHUB_USER = "DemiDummy";
 const SITE_REPO = "demidummy.github.io";
 const CACHE_KEY = "demidummy-repos";
 const CACHE_MINUTES = 10;
-const NUMBER_WORDS = ["No", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve"];
+const NUMBER_WORDS = ["No", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen", "Twenty"];
 const NEW_GAME_ACCENTS = [
     ["#ffb454", "#3a1f00"],
     ["#c39bff", "#21004a"],
